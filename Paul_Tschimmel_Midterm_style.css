@@ -110,6 +110,10 @@ filter: blur(1px);
     bottom:50px;
     left:50px;
 }
+.render_hut:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+  filter: brightness(1.2); /* Optionally brighten the image on hover */
+}
   .image-text {
     position: absolute;
     top: 50%;
