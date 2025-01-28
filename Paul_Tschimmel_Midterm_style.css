@@ -1,0 +1,217 @@
+body{
+    padding: 40px;
+    background-color: rgb(192, 192, 192);
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
+
+body.dark-mode {
+  background-color: #0008ff;
+  color: #fff;
+  
+}
+
+button{
+  position: absolute;
+  top: 15%;
+  right: 40px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.622); /* Semi-transparent background */
+  backdrop-filter: blur(20px);
+  font-family:cursive;
+    font-style: italic;
+  color: rgb(0, 0, 0);
+  filter: blur(1px);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;;
+}
+
+button:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+  filter: blur(0);  /* Remove the blur */
+}
+
+
+.render_trees{
+    position: fixed;
+      display: inline-block;
+      height: 600px;
+      width: auto;
+      box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5); 
+      border-radius: 20px; 
+      transition: transform 0.3s ease, filter 0.3s ease;;
+    bottom:50px;
+    left:50px
+
+    
+}
+
+.render_trees:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+  filter: brightness(1.2); /* Optionally brighten the image on hover */
+}
+
+.text1{
+position: absolute;
+right: 50px;
+font-family:cursive;
+font-style: italic;
+font-size: 28px;
+text-align: right;
+margin: 150px auto;
+width: 40%;
+color: hsl(0, 0%, 0%);
+filter: blur(1px);
+}
+
+.Section{
+  position: fixed;
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 20px; 
+  transition: transform 0.3s ease, filter 0.3s ease;;
+    width: 800px;
+    bottom:50px;
+    left: 50px;
+}
+.Section:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+  filter: brightness(1.2); /* Optionally brighten the image on hover */
+}
+.model{
+  position: fixed;
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 20px; 
+  transition: transform 0.3s ease, filter 0.3s ease;;
+    bottom:50px;
+    left:50px;
+}
+.model:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+  filter: brightness(1.2); /* Optionally brighten the image on hover */
+}
+
+.render_hut{
+  position: fixed;
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5); 
+  border-radius: 20px; 
+    width: 800px;
+    bottom:50px;
+    left:50px;
+}
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 28px;
+    font-weight: italic;
+    filter: blur(2px);
+    text-align: center;
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for both blur and size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+  }
+  
+  .image-text:hover {
+    filter: blur(0);  /* Remove the blur */
+    transform: translate(-50%, -50%) scale(1.1);  /* Enlarge the text, still centered */
+  }
+  
+  a{
+    color: rgb(0, 0, 0);
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 10%;
+  }
+
+  h1{
+    position: absolute;
+    top: 10%;
+    font-family:cursive;
+    font-style: italic;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    filter: blur(2px);
+  }
+
+  h2{
+    position: absolute;
+    top: 20%;
+    font-family:cursive;
+    font-style: italic;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    filter: blur(2px);
+  }
+
+
+  .rectangle {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+
+    width: 70%;      /* Width of the rectangle */
+    height: 400px;   /* Height of the rectangle */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 1) 90%);
+    /* Gradient from transparent to white */
+  filter: blur(4px);
+
+
+  }
+
+  .cursor {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circle shape */
+    background: radial-gradient(circle, white 0%, transparent 100%);
+    pointer-events: none; /* Prevent the cursor from interfering with interactions */
+    transition: transform 0.1s ease-out;
+    transform: translate(-50%, -50%); /* Ensure it’s centered on the mouse position */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Shadow to make it stand out */
+    filter: blur(2px); /* Apply a blur effect */
+  }
+
+  
+  .image_size_project_1 img{
+width: 28%;
+height: 85%;
+object-fit: cover;
+  }
+
+.image_size_project_2 img{
+ width: 50%;
+ height: 60%;
+ object-fit: cover;
+ }
+
+.image_size_project_3 img{
+ width: 50%;
+ height: 60%;
+ object-fit: cover;
+  }
+
+.image_size_project_4 img{
+ width: 50%;
+ height: 60%;
+object-fit: cover;
+ }
